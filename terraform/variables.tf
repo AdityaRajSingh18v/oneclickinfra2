@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "owner" {
   description = "Owner tag"
   type        = string
-  default     = "abhinav"
+  default     = "aditya"
 }
 
 variable "vpc_cidr" {
@@ -44,7 +44,7 @@ variable "instance_type_redis" {
 variable "s3_bucket_name" {
   description = "S3 bucket for demo (must be globally unique!)"
   type        = string
-  default     = "abhi-redis-ha-demo-bucket-change-me"
+  default     = "aditya-redis-demo-bucket-18"
 }
 
 variable "key_name" {

@@ -11,22 +11,21 @@ This project provisions a fully automated **Redis High Availability setup** usin
 
 ---
 
-# 🖼️ Infrastructure Diagram (ADD IMAGE HERE)
-
-> **📌 Infrastructure Diagram**
-
-
-<img width="658" height="720" alt="image" src="https://github.com/user-attachments/assets/3c31a08b-a9a9-4cdb-9759-9078a270ae55" />
 
 ---
 
 # 📌 Project Features
 
 ✔ Fully automated Redis HA deployment
+
 ✔ Bastion-based secure SSH tunneling
+
 ✔ Private Redis Master + Replica
+
 ✔ Automatic replication configuration
+
 ✔ Jenkins-based CI/CD pipeline
+
 ✔ Built-in Redis PING health check
 
 ---
@@ -48,14 +47,14 @@ This project provisions a fully automated **Redis High Availability setup** usin
        │                     AWS VPC                      │
        │                                                  │
        │  ┌──────────────┐          ┌──────────────────┐  │
-       │  │   Bastion     │  SSH     │ Redis Master     │  │
-       │  │ 13.135.72.10  ├─────────▶│ 10.0.2.210       │  │
+       │  │   Bastion    │  SSH     │ Redis Master     │  │
+       │  │              ├─────────▶│                 │  │
        │  └──────────────┘          └──────────────────┘  │
        │           │                          ▲           │
        │           ▼                          │           │
        │  ┌──────────────────┐                │           │
-       │  │ Redis Replica     │◀──────────────┘           │
-       │  │ 10.0.3.150        │                            │
+       │  │ Redis Replica    │◀──────────────┘           │
+       │  │                  │                            │
        │  └──────────────────┘                            │
        └──────────────────────────────────────────────────┘
 ```
